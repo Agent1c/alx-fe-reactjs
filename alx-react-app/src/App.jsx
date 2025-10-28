@@ -25,7 +25,7 @@ function App() {
       <h1>Vite + React</h1>
       <h2>Hello rasta</h2>
       <WelcomeMessage />
-      <UserProfile name="Simon Ndlovu" age="31" bio="Loves hiking and photography" />
+      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
       <Header />
       <MainContent />
       <Footer />
