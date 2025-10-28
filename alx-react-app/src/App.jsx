@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import WelcomeMessage from './components/WelcomeMessage'
 import Header from './components/Header'
+import UserProfile from './components/UserProfile'
 import MainContent from './components/MainContent'
 import Footer from './components/Footer'
 
@@ -24,6 +25,7 @@ function App() {
       <h1>Vite + React</h1>
       <h2>Hello rasta</h2>
       <WelcomeMessage />
+      <UserProfile name="Simon Ndlovu" age="31" bio="Loves hiking and photography" />
       <Header />
       <MainContent />
       <Footer />
