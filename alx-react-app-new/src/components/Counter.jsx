@@ -2,8 +2,23 @@ import {useState} from "react";
 
 //Counter function
 const Counter = () =>{
-    const {count, setCount} = useState(0);
+    const [count, setCount] = useState(0);
+    
+    //increment count
+    // const increment = () =>{
+    //     setCount(count + 1);
+    // }
 
+    //     //decrement count
+    // const decrement = () =>{
+    //     setCount(count - 1);
+    // }
+
+    // //reset count
+    // const reset = () =>{
+    //     setCount(0);
+    // }
+    
     return(
         <div>
             <p>Current Count: {count}</p>
@@ -14,4 +29,4 @@ const Counter = () =>{
     )
 }
 
-export default Counter;
+export default Counter; 
