@@ -1,0 +1,22 @@
+import {useState} from "react";
+
+//Counter function
+const Counter = () =>{
+    const {count, setCount} = useState(0);
+
+    // click function
+    // const handleClick = (){
+    //     setCount(count)
+    // }
+
+    return(
+        <div>
+            <p>Current Count: {count}</p>
+            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <button onClick={() => setCount(count - 1)}>Decrement</button>
+            <button onClick={() => setCount(0)}>Reset</button>
+        </div>
+    )
+}
+
+export default Counter;
