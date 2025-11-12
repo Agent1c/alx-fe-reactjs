@@ -4,11 +4,6 @@ import {useState} from "react";
 const Counter = () =>{
     const {count, setCount} = useState(0);
 
-    // click function
-    // const handleClick = (){
-    //     setCount(count)
-    // }
-
     return(
         <div>
             <p>Current Count: {count}</p>
