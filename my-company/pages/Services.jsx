@@ -1,16 +1,20 @@
-   function Services() {
-     return (
-       <div style={{ padding: '20px',
-        margin: '0 auto',
-        }}>
-         <h1>Our Services</h1>
-         <ul>
-           <li>Technology Consulting</li>
-           <li>Market Analysis</li>
-           <li>Product Development</li>
-         </ul>
-       </div>
-     );
-   }
+import NavBar from "../src/components/Navbar";
 
-   export default Services;
+function Services() {
+  return (
+    <div style={{
+      padding: '20px',
+      margin: '0 auto',
+    }}>
+      <NavBar />
+      <h1>Our Services</h1>
+      <ul>
+        <li>Technology Consulting</li>
+        <li>Market Analysis</li>
+        <li>Product Development</li>
+      </ul>
+    </div>
+  );
+}
+
+export default Services;
