@@ -1,35 +1,22 @@
-import './App.css'
-import Home from '../pages/Home'
-import About from '../pages/About'
-import Services from '../pages/Services'
-import Contact from '../pages/Contact'
-import ErrorHandle from './error-page'
-
-//Router
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-
-//Create path.
-const router = createBrowserRouter([
-  { path: "/", 
-    element: <Home />,
-    errorElement: <ErrorHandle />
-   },
-  { path: "pages/about", element: <About /> },
-  { path: "pages/services", element: <Services /> },
-  { path: "pages/contact", element: <Contact /> },
-
-])
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
 
 
 function App() {
-
   return (
-    <>
-      <RouterProvider router={router} />
-      {/* </RouterProvider> */}
-
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
