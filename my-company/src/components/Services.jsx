@@ -1,13 +1,10 @@
-import NavBar from "./Navbar";
-
 function Services() {
   return (
     <div style={{
       padding: '20px',
       margin: '0 auto',
     }}>
-      <NavBar />
-      <h1>Our Services</h1>
+    <h1>Our Services</h1>
       <ul>
         <li>Technology Consulting</li>
         <li>Market Analysis</li>
